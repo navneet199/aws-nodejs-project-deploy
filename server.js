@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+require("dotenvSS").config
 
 app.get('/api/get', (req, res)=>{
     res.send({message:'Hello from Nodejs.'});
@@ -14,7 +15,7 @@ app.get('/api/products', (req, res)=>{
 });
 
 app.get('/api/categories', (req, res)=>{
-    res.send({message:'Hello from Nodejs categories.'});
+    res.send({message:process.env.MYNAME});
 });
 
 app.listen(8000, ()=>{
