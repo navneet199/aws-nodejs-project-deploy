@@ -27,9 +27,7 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: |
-        touch .env
-        printf "%s" "${{ secrets.PROD }}" > .env
-
+       echo "${{ secrets.PROD }}" | tr -d '\r' > .env
     - run: pm2 restart Backend
     
 
