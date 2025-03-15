@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-require("dotenvSS").config
+require("dotenv").config
 
 app.get('/api/get', (req, res)=>{
     res.send({message:'Hello from Nodejs.'});
