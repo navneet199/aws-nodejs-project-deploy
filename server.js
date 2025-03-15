@@ -7,7 +7,7 @@ app.get('/api/get', (req, res)=>{
 });
 
 app.get('/api/users', (req, res)=>{
-    res.send({message:'Hello from Nodejs users.'});
+    res.send({message:'Hello from Nodejs users route.'});
 });
 
 app.get('/api/products', (req, res)=>{
