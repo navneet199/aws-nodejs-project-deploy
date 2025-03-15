@@ -18,5 +18,5 @@ app.get('/api/categories', (req, res)=>{
 });
 
 app.listen(8000, ()=>{
-    console.log('Listening to 8000');
+    console.log('Listening to 8000 ');
 })
